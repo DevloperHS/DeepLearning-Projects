@@ -17,7 +17,7 @@ from tensorflow.keras.layers import Conv2D , Flatten , MaxPooling2D , Dense , Dr
 from tensorflow.keras.preprocessing.image import ImageDataGenerator , img_to_array , array_to_img
 
 #paths
-base_path = r'C:/Users/91736/Documents/PROJECTS/Waste Classifier/Data Files/dataset-resized/dataset-resized' # file path
+base_path = r'C:/Users/91736/Documents/PROJECTS/Waste Classifier/Data Files/dataset-resized/dataset-resized' # data path
 img_list = glob.glob(os.path.join(base_path , '*/*.jpg'))
 print(len((img_list)))
 

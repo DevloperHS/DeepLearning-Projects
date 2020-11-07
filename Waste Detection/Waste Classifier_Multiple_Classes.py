@@ -17,7 +17,7 @@ from tensorflow.keras.layers import Conv2D , Flatten , MaxPooling2D , Dense , Dr
 from tensorflow.keras.preprocessing.image import ImageDataGenerator , img_to_array , array_to_img
 
 #paths
-base_path = r'C:/Users/91736/Documents/PROJECTS/Waste Classifier/Data Files/dataset-resized/dataset-resized'
+base_path = r'C:/Users/91736/Documents/PROJECTS/Waste Classifier/Data Files/dataset-resized/dataset-resized' # file path
 img_list = glob.glob(os.path.join(base_path , '*/*.jpg'))
 print(len((img_list)))
 
@@ -118,7 +118,7 @@ history = model.fit(train_gen ,
                     workers = 4 ,
                     callbacks = callback_ls)
 
-#es=EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=50)
+#es=EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=50) # early stopping
 
 # plotting graphs
 def plot_graphs(history, string):
@@ -148,15 +148,12 @@ def predict_class(path):
     
     print('Prediction Value: ' , np.max(predict[0] , axis = -1))
     print("Classified:",predicted_class)
-    
+  
+  
+# test path change as per need
 '''
-predict_class(r'C:/Users/91736/Documents/PROJECTS/Waste Classifier/Data Files/dataset-resized/dataset-resized/plastic/plastic75.jpg')
-predict_class(r'C:/Users/91736/Documents/PROJECTS/Waste Classifier/Data Files/dataset-resized/dataset-resized/cardboard/cardboard101.jpg')
-predict_class(r'C:/Users/91736/Documents/PROJECTS/Waste Classifier/Data Files/dataset-resized/dataset-resized/glass/glass11.jpg')
-predict_class(r'C:/Users/91736/Documents/PROJECTS/Waste Classifier/Data Files/dataset-resized/dataset-resized/paper/paper101.jpg')
-predict_class(r'C:/Users/91736/Documents/PROJECTS/Waste Classifier/Data Files/dataset-resized/dataset-resized/plastic/plastic101.jpg')
-predict_class(r'C:/Users/91736/Documents/PROJECTS/Waste Classifier/Data Files/dataset-resized/dataset-resized/trash/trash101.jpg')
-print('tests')
 predict_class(r'C:/Users/91736/Documents/PROJECTS/Waste Classifier/Data Files/test_imgs/plastic_bottle.jpg')
-predict_class(r'C:/Users/91736/Documents/PROJECTS/Waste Classifier/Data Files/test_imgs/Scap.jpg')
+
+# 73% accuracy reached - 50 epochs 
+
 '''

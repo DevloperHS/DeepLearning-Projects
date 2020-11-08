@@ -7,6 +7,9 @@ labels.txt : Labels Genrated by Waste Classifier.py
 
 Waste Classifier_Multiple_Classes.py : File Updated From Orignal (Multiclass Classification)
 
+Data Files  : Files For Traning Model
+
+
  
 
 

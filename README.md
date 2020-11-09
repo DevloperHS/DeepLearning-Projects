@@ -9,7 +9,7 @@ Support Library   : Matplotlib , Pandas , Numpy , Keras(tensorflow.keras) , Seab
                                                                                       
                                                                                       [ NLTK
                                                                                         NEWSPAPER 3K
-                                                                                        SCI - KIT LEARN
+                                                                                        SCI-KIT LEARN
                                                                                         ARTICLE
                                                                                       ]
 
